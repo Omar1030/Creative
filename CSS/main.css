@@ -1,0 +1,559 @@
+/* Start Variables */
+:root {
+    --main-color: #f4623A;
+    --text-color: #6c757d;
+    --white-color: white;
+    --black-color: black;
+    scroll-behavior: smooth;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+@media (max-width: 786px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+/* End Global Rules */
+/* Start Creative */
+/* .creative {
+    background-image: url(../Images/bg-masthead.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.creative::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 77, 66, 0.8);
+} */
+/* Start Landing */
+.landing {
+    background-image: url(../Images/bg-masthead.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.landing::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 77, 66, 0.8);
+    z-index: 2;
+} 
+.landing .navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: var(--white-color);
+    z-index: 4;
+}
+.landing .navbar .logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.landing .navbar .logo ul {
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    display: none;
+}
+.landing .navbar .logo ul li {
+    margin: 10px 0px;
+    transition: 0.3s;
+}
+.landing .navbar .logo ul li a {
+    font-size: 14.4px;
+    color: var(--text-color);
+}
+.landing .navbar .logo ul li a:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+.landing .navbar i {
+    font-size: 30px;
+    color: #000000cf;
+    border: 1px solid var(--text-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: none;
+}
+.landing .navbar ul li {
+    margin-left: 15px;
+    color: black;
+    transition: 0.3s;
+}
+.landing .navbar ul li a {
+    font-size: 0.85rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.landing .navbar ul li a:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+.container .contant {
+    width: 786px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.container .contant h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    position: relative;
+}
+.container .contant h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 4px;
+    background-color: var(--main-color);
+}
+.container .contant p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.15rem;
+    text-align: center;
+    margin: 0px auto;
+    padding: 25px 0px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+.container .contant a {
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-size: 13px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline;
+}
+@media (max-width: 992px) {
+    .landing .navbar {
+        padding: 15px 30px;
+    }
+    .landing .navbar > ul {
+        display: none;
+    }
+    .landing .navbar i {
+        display: block;
+    }
+    .container .contant h1 {
+        font-size: 2.25rem;
+        max-width: 660px;
+    }
+    .container .contant p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 786px) {
+    .container .contant h1,
+    .container .contant p {
+        width: 330px;
+    }
+}
+/* End Landing */
+/* Start Find Out */
+.creative .findOut {
+    padding: 128px 0px;
+    background-color: var(--main-color);
+    z-index: 2;
+}
+.creative .findOut .container {
+    min-height: 232px;
+}
+.creative .findOut h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--white-color);
+    margin: 0px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.creative .findOut h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 4px;
+    background-color: var(--white-color);
+}
+.creative .findOut p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75) !important;
+    margin: 0px auto;
+    padding: 25px 0px 25px 0px;
+}
+.creative .findOut a {
+    text-decoration: none;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 13px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+}
+@media (max-width: 992px) {
+    .creative .findOut p {
+        padding: 25px 120px;
+    }
+}
+@media (max-width: 786px) {
+    .creative .findOut .container {
+        min-height: 261px;
+    }
+    .creative .findOut h2 {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+    .creative .findOut p {
+        padding: 25px 0px;
+    }
+}
+/* End Find Out */
+/* Start Service */
+.service {
+    padding: 128px 0px;
+}
+.service .container h2 {
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 25px;
+    position: relative;
+}
+.service .container h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 4px;
+    background-color: var(--main-color);
+}
+.service .container .services {
+    margin: 60px auto 0px auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+}
+.service .container .services > div {
+    text-align: center;
+}
+.service .container .services > div i {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+.service .container .services > div h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+.service .container .services > div p {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    margin: 0px auto;
+    max-width: 250px;
+    padding: 8px 0px;
+    color: var(--text-color);
+}
+@media (max-width: 992px) {
+    .service .container .services > div p {
+        width: 270px;
+    }
+    .service .container .services {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .service .container .services > div:not(.four) {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 786px) {
+    
+}
+/* End Service */
+/* Start Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.projects .image {
+    position: relative;
+}
+.projects .image::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: rgba(244, 98, 58, 0.9);
+    transition: 0.25s ease;
+}
+.projects .image h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 0.85rem;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.25s ease;
+    color: rgba(255, 255, 255, 0.5);
+}
+.projects .image p {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.25s ease;
+}
+.projects .image:hover::after {
+    opacity: 1;
+}
+.projects .image:hover h1,
+.projects .image:hover p {
+    opacity: 1;
+}
+.projects .image img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 786px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    }
+}
+@media (max-width: 992px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+}
+/* End Projects */
+/* Start Download */
+.download {
+    background-color: rgb(33, 37, 41);
+    padding: 128px 0px;
+}
+.download .container {
+    height: 120px;
+}
+.download .container h1 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.download .container button {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 786px) {
+    .download .container {
+        height: 140px;
+    }
+    .download .container h1 {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+}
+/* End Download */
+/* Start Info */
+.info {
+    padding: 128px 0px;
+}
+.info .container {
+
+}
+.info .container h2 {
+    margin: 0px 0px 0.5rem 0px;
+    padding-bottom: 25px;
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: 500;
+    position: relative;
+}
+.info .container h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 4px;
+    background-color: var(--main-color);
+}
+.info .container p {
+    max-width: 575px;
+    margin: 0px auto;
+    padding: 25px 0px 40px 0px;
+    font-family: 'Merriweather', serif;
+    color: var(--text-color);
+    line-height: 25px;
+}
+.info .container form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    max-width: 575px;
+}
+.info .container form > div {
+    position: relative;
+}
+.info .container form > div input,
+.info .container form > div textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border: 1px solid #ced4da;
+    outline: none;
+    padding: 25px 0px 15px 10px;
+    border-radius: 5px;
+}
+.info .container form textarea {
+    min-height: 150px;
+    resize: vertical;
+    padding: 15px 0px 0px 10px;
+}
+.info .container form > div label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-family: 'Merriweather', serif;
+    transition: 0.25s ease;
+} 
+.info .container form > div input:focus + label,
+.info .container form > div textarea:focus  + label{
+    top: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.info .container form input:focus,
+.info .container form textarea:focus {
+    border-color: #fab19d;
+    box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+}
+.info .container form input:nth-child(2):focus {
+    border-color: #e7818b;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+.info .container form button {
+    color: var(--white-color);
+    background-color: #f4623a;
+    border-color: #f4623a;
+    border: none;
+    opacity: 0.65;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.info .container .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.info .container .contact i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+.info .container .contact span {
+    font-family: 'Merriweather', serif;
+    color: #000000ba;
+}
+/* End Info */
+/* Start Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(248, 249, 250);
+    font-family: 'Merriweather', serif;
+    font-size: 0.875em;
+    color: #6c757d;
+}
+/* End Footer */
+/* End Creative */
